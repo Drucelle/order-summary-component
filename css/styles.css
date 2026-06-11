@@ -1,13 +1,29 @@
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
- 
- :root {
-    color: hsl(228, 45%, 44%);
-    
- }
- 
-.attribution {font-size: 0.6875rem ; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --color-primary-light-blue-100: hsl(225, 100%, 94%);
+  --color-primary-dark-blue-700: hsl(245, 75%, 52%);
+  /* Neutral */
+  --color-neutral-blue-50: hsl(225, 100%, 98%);
+  --color-neutral-gray-600: hsl(224, 23%, 55%);
+  --color-neutral-blue-950: hsl(223, 47%, 23%);
+  /* Font Size */
+  --font-size-p: 16px;
+  /* Font Family */
+  --font-family: "Red Hat Display", sans-serif;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
