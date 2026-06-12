@@ -20,6 +20,138 @@
   --font-family: "Red Hat Display", sans-serif;
 }
 
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-primary-light-blue-100);
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  padding: 0 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 340px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #ffffff;
+
+}
+.card-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 25px;
+}
+.card-flexbox a{
+    text-decoration: none;
+    color: var(--color-neutral-gray-600);
+    font-weight: 900;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.hero {
+    max-width: 375px;
+    border-radius: 20px 20px 0 0;
+}
+
+.text-blurb {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+.text-blurb h1{
+    Margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.text-blurb p{
+    /* Is not centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-neutral-gray-600);
+    font-weight: 500;
+    line-height: 1.5;
+}
+.info-flexbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    border-radius: 30px;
+    background-color: var(--color-neutral-blue-50);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+.info-flexbox a {
+   margin-left: auto;
+}
+.annual-plan-flexbox{
+    color: var(--color-neutral-gray-600);
+
+}
+.annual-plan-flexbox h4{
+     font-weight: 900;
+     color: var(--color-neutral-blue-950);
+}
+.annual-plan-flexbox p{
+     font-weight: 500;
+}
+.info-flexbox a{
+    font-weight: 900;
+    text-decoration: underline;
+    color: var(--color-primary-dark-blue-700);
+}
+.button{
+    background-color: var(--color-primary-dark-blue-700);
+    color: #ffffff;
+    font-weight: 900;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 10px 10px 8px hsl(240, 100%, 95%);
+    padding: 20px ;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 5px;
+    } 
+
+.button p{
+    padding: 5px;
+}
+.button a{
+    margin-top: 30px;
+    }
+.button:hover{
+    background-color: hsl(240, 100%, 80%);
+}
+button:active {
+    background-color: hsl(240, 100%, 80%);
+    transform: translatey(4px);
+}
+
+
+
+footer{
+    margin: 15px;
+}
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
