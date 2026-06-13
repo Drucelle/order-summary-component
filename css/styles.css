@@ -7,6 +7,7 @@
 }
 :root {
   /* Primary */
+  --color-white: #ffffff;
   --color-primary-light-blue-100: hsl(225, 100%, 94%);
   --color-primary-dark-blue-700: hsl(245, 75%, 52%);
   /* Neutral */
@@ -14,7 +15,7 @@
   --color-neutral-gray-600:hsl(224, 23%, 40%);
   --color-neutral-blue-950: hsl(223, 47%, 23%);
   /* Font Size */
-  --font-size-p: 16px;
+  --font-size-p: 1rem;
   /* Font Family */
   --font-family: "Red Hat Display", sans-serif;
 }
@@ -29,30 +30,30 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    padding: 0 5px;
+    padding: 0 0.3125rem;
 }
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
-    border-radius: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 30px 50px -10px hsl(245, 75%, 85%);
+    width: clamp(17rem, 90%, 25rem);
+    border-radius: 1.25rem;
+    background-color: var(--color-white);
+   box-shadow: 0 1.875rem 3.125rem -0.625rem hsl(245, 75%, 85%);
 }
 .card-flexbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    padding: 25px;
+    padding: 1.5625rem;
 }
 .card-flexbox p{
-    max-width: 240px;
+    max-width: clamp(15rem, 80%, 20rem);
 }
 .hero {
-    max-width: 375px;
-    border-radius: 20px 20px 0 0;
+    max-width: 23.4375rem;
+    border-radius: 1.25rem 1.25rem 0 0;
 }
 .text-blurb {
     display: flex;
@@ -60,12 +61,12 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 .text-blurb h1 {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-weight: 900;
-    font-size: 22px;
+    font-size: clamp(1.25rem, 3vw, 1.375rem);
     color: var(--color-neutral-blue-950);
 }
 .text-blurb p {
@@ -76,19 +77,18 @@ body {
     color: var(--color-neutral-gray-600);
     font-weight: 700;
     line-height: 1.5;
-    font-size: 14px;
-    max-width: 240px;
+    font-size: clamp(0.8rem, 2vw, 0.875rem);
+    max-width: clamp(15rem, 80%, 20rem);
 }
 .info-flexbox {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 8px;
-    border-radius: 30px;
+    gap: 0.5rem;
     background-color: var(--color-neutral-blue-50);
-    border-radius: 10px;
-    padding: 10px 15px;
-    margin-bottom: 20px;
+    border-radius: 0.625rem;
+    padding: 0.625rem 0.9375rem;
+    margin-bottom: 1.25rem;
     width: 100%;
 }
 .info-flexbox a {
@@ -114,37 +114,35 @@ body {
 }
 .button{
     background-color: var(--color-primary-dark-blue-700);
-    color: #ffffff;
+    color: var(--color-white);
     font-weight: 900;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     border: none;
-    box-shadow: 0px 20px 30px hsl(245, 75%, 89%);
-    padding: 15px;
+    box-shadow: 0 1.25rem 1.875rem hsl(245, 75%, 89%);
+    padding: 0.9375rem;
     width: 100%;
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: 0.875rem;
+    margin-top: 0.3125rem;
     } 
-.button a {
-    margin-top: 30px;
-    }
+
 .button:hover {
     background-color: hsl(240, 100%, 80%);
 }
 .button:active {
     background-color: hsl(240, 100%, 80%);
-    transform: translatey(4px);
+    transform: translatey(0.25rem);
 }
 .cancel-order {
     text-decoration: none;
     color: var(--color-neutral-gray-600);
     font-weight: 900;
-    margin-top: 25px;
+    margin-top: 1.5625rem;
 }
 .cancel-order:hover {
     color: var(--color-neutral-blue-950);
 }
 footer {
-    margin: 50px;
+    margin: 3.125rem;
 }
 .attribution {
     font-size: 0.6875rem;
@@ -158,16 +156,14 @@ footer {
 
 /* Media query Tablet */
 
-@media (min-width: 430px) {
+@media (min-width: 26.875rem) {
     body {
-        padding-top: 40px;
+        padding-top: 2.5rem;
         background-image: url("../images/pattern-background-desktop.svg");
         background-position: top center;
         background-size: 100%;
     }
-    .card {
-        max-width: 400px;
-    }
+    
     .hero {
         width: 100%;
         max-width: 100%;
@@ -175,27 +171,25 @@ footer {
 }
 
 /* Media query Desktop */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     body {
-        padding-top: 80px;
+        padding-top: 5rem;
         background-image: url("../images/pattern-background-desktop.svg");
         background-position: top center;
         background-size: 100%;
     }
-    .card {
-        max-width: 400px;
-    }
+    
     .card-flexbox {
-        padding-top: 30px;
+        padding-top: 1.875rem;
     }
     .hero {
         width: 100%;
         max-width: 100%;
     }
     .info-flexbox {
-        padding: 15px 20px;
+        padding: 0.9375rem 1.25rem;
     }
     .button {
-        padding: 15px;
+        padding: 0.9375rem;
     }
 }

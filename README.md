@@ -43,7 +43,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - Google Fonts (Red Hat Display)
 - CSS Media Queries
