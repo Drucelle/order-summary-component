@@ -15,9 +15,9 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+
 
 ## Overview
 
@@ -26,23 +26,16 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 Users should be able to:
 
 - See hover states for interactive elements
+- View the optimal layout dependig on their device screen size
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Order Summary Component](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/Drucelle/order-summary-component/)
+- Live Site URL: [Live Demo](https://drucelle.github.io/order-summry-component/)
 
 ## My process
 
@@ -53,69 +46,116 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Google Fonts (Red Hat Display)
+- CSS Media Queries
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project taighgtt me a lot about responsivve design.
 
-To see how you can add code snippets, see below:
+**Mobile-first workflow**
+I learned to always open the DevTools device toolbar when starting a project ansd set it to 320px. Starting from the smaallest screen size. Then build it upward from there using 'min-width' '@media' queries.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+**DevTools**
+I noticed during this project that I got more comfortable using Chrome DevTools to inspect elements, debug CSS issues, and test across different screen sizes. I also learned to dock DevTools to the bottom of the screen to maximise. the vviewport width when testing.
+
+**Flexbox**
+I used and learned how to use Flexbox throughout this project to create layouts. Key properties I worked with:
+
+``` css
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: autto; /* pushing elements to the right */
+flex: 1; /* makingg elements grow to fill available space */
 ```
+
+**CSS Default Reset**
+
+I learned and understand now why I always need to start CSS with a default reset rule set, including:
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizingg: border-box;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+**CSS Custom Properties**
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+After the reset rule always set up a `:root` block with all my colors, fonts etc, making the code cleaner and easier to maintain:
+
+```css
+:root {
+  --color-primaary-darkblue-700: hsl(245, 75%, 52%);
+  --color-neutraal-grey-600: hsl(224, 23%, 55%);
+  --font-family: "Red Hat Display", sans-serif;
+}
+```
+
+**Media Queries**
+
+Apart from starting with the mobile first approach I leaned to use separate media queries for taablet and desktop breakpoints, switching images and adjusting card sizing:
+
+```css
+@media (min-width: 430px){/* tablet */}
+@media (min-width: 768px){/* desktop */}
+```
+
+**Terminal & Git**
+
+I managed the entire project from the terminal, creating folders, moving files, initialising Git, and pushing to Github. I made small, meaning ful commits throughout the project.
+
+**Keyboard shortcuts for Mac learned:**
+- `Shift + Option + F` Format document with Prettier
+- `Cmd + Shift + R` Hard refresh in Chrome
+- `Cmd + Z` Undo in VS Code
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects I want to:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Get more comfortable with Chrome DevTools for debugging
+- Deepen my understanding of Flexbox and when to use CSS Grid instead
+- Get beter at writing media queries and understand rresponsive design best pratices
+- Improve my ability to match design pixel pefectly
+- Build more confidence writing CSS
+
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [W3schools](https://w3schools.com) - For coding tutorials, best practices and documentation.
+- [W3shools-Animated-Buttons](https://www.w3schools.com/howto/howto_css_animate_buttons.asp) Documentation on animated buttons
+- [W3schools-Shadow-Box](https://www.w3schools.com/css/css3_shadows_box.asp) CSS Boxshadow
+- [W3schools-media-rules](https://www.w3schools.com/cssref/atrule_media.php) CSS `@media` rules
+- [MDN](https://developer.mozilla.org/) - For coding best practices and documentation.
+- [markdown-guide](https://www.markdownguide.org/) To learn about Markdown for e.g. Write your README.md file
+-[Markdown-tutorial](https://www.markdownguide.org/getting-started/)A tutorial in writing with Markdown 
+- [Coding2Go](https://www.youtube.com/watch?v=wsTv9y931o8) YT Chanel Learn Flexbox in 20 minutes
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+I worked Claude (Anthropic) as a coding coach and guide throughout this project.
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+Sometimes when I doubted my steps I would ask if the steps I was planning to take were right e.g. when I started the project setup via command line. 
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+Claude's role was to not give me the answers but to ask me questions that would point me in the right direction when stuck.
+
+I have asked less questions this time around. But with the media queries Claude definitely helped me look in the right places.
+
+Although sometimes Claude mighht want you to do things Claude's way. It is helpful iff you familiarise yourself with reading the documentation ddirectoriees like [W3schools](https://w3schools.com) and [MDN](https://developer.mozilla.org/). 
+
+As you are the one working on the project you know what and how you want to go about it. It might take a bit longer to figure out in the beginning but it is worth it to feel confident doing so. This helps you greatly in knowing what questions to ask to get the answers you need.
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@yDrucelle](https://www.frontendmentor.io/profile/Drucelle)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
