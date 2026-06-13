@@ -1,104 +1,161 @@
-# Frontend Mentor - Order summary card
+# Frontend Mentor - Order summary card solution
 
-![Design preview for the Order summary card coding challenge](preview.jpg)
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [AI Collaboration](#ai-collaboration)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
 
-## The challenge
 
-Your challenge is to build out this order summary card component and get it looking as close to the design as possible.
+## Overview
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### The challenge
 
-Your users should be able to:
+Users should be able to:
 
 - See hover states for interactive elements
+- View the optimal layout dependig on their device screen size
 
-### Want some support on the challenge? 
+### Screenshot
 
-[Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+![Order Summary Component](./screenshot.jpg)
 
-## Where to find everything
+### Links
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+- Solution URL: [GitHub Repository](https://github.com/Drucelle/order-summary-component/)
+- Live Site URL: [Live Demo](https://drucelle.github.io/order-summry-component/)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+## My process
 
-If you would like the Figma design file to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Built with
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Google Fonts (Red Hat Display)
+- CSS Media Queries
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-## Using AI coding assistants
+### What I learned
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
+This project taighgtt me a lot about responsivve design.
 
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
+**Mobile-first workflow**
+I learned to always open the DevTools device toolbar when starting a project ansd set it to 320px. Starting from the smaallest screen size. Then build it upward from there using 'min-width' '@media' queries.
 
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
+**DevTools**
+I noticed during this project that I got more comfortable using Chrome DevTools to inspect elements, debug CSS issues, and test across different screen sizes. I also learned to dock DevTools to the bottom of the screen to maximise. the vviewport width when testing.
 
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+**Flexbox**
+I used and learned how to use Flexbox throughout this project to create layouts. Key properties I worked with:
 
-## Building your project
+``` css
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: autto; /* pushing elements to the right */
+flex: 1; /* makingg elements grow to fill available space */
+```
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+**CSS Default Reset**
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+I learned and understand now why I always need to start CSS with a default reset rule set, including:
 
-## Deploying your project
+```css
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizingg: border-box;
+}
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+**CSS Custom Properties**
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+After the reset rule always set up a `:root` block with all my colors, fonts etc, making the code cleaner and easier to maintain:
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://www.frontendmentor.io/guides/hosting-your-solution).
+```css
+:root {
+  --color-primaary-darkblue-700: hsl(245, 75%, 52%);
+  --color-neutraal-grey-600: hsl(224, 23%, 55%);
+  --font-family: "Red Hat Display", sans-serif;
+}
+```
 
-## Create a custom `README.md`
+**Media Queries**
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+Apart from starting with the mobile first approach I leaned to use separate media queries for taablet and desktop breakpoints, switching images and adjusting card sizing:
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+```css
+@media (min-width: 430px){/* tablet */}
+@media (min-width: 768px){/* desktop */}
+```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+**Terminal & Git**
 
-## Submitting your solution
+I managed the entire project from the terminal, creating folders, moving files, initialising Git, and pushing to Github. I made small, meaning ful commits throughout the project.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://www.frontendmentor.io/guides/how-to-submit-solutions) for tips on how to do this.
+**Keyboard shortcuts for Mac learned:**
+- `Shift + Option + F` Format document with Prettier
+- `Cmd + Shift + R` Hard refresh in Chrome
+- `Cmd + Z` Undo in VS Code
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
 
-## Sharing your solution
+### Continued development
 
-There are multiple places you can share your solution:
+In future projects I want to:
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
-2. Share on [X (formerly Twitter)](https://x.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in your post. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on [LinkedIn](https://www.linkedin.com/company/frontend-mentor/).
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- Get more comfortable with Chrome DevTools for debugging
+- Deepen my understanding of Flexbox and when to use CSS Grid instead
+- Get beter at writing media queries and understand rresponsive design best pratices
+- Improve my ability to match design pixel pefectly
+- Build more confidence writing CSS
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+### Useful resources
 
-## Got feedback for us?
+- [W3schools](https://w3schools.com) - For coding tutorials, best practices and documentation.
+- [W3shools-Animated-Buttons](https://www.w3schools.com/howto/howto_css_animate_buttons.asp) Documentation on animated buttons
+- [W3schools-Shadow-Box](https://www.w3schools.com/css/css3_shadows_box.asp) CSS Boxshadow
+- [W3schools-media-rules](https://www.w3schools.com/cssref/atrule_media.php) CSS `@media` rules
+- [MDN](https://developer.mozilla.org/) - For coding best practices and documentation.
+- [markdown-guide](https://www.markdownguide.org/) To learn about Markdown for e.g. Write your README.md file
+-[Markdown-tutorial](https://www.markdownguide.org/getting-started/)A tutorial in writing with Markdown 
+- [Coding2Go](https://www.youtube.com/watch?v=wsTv9y931o8) YT Chanel Learn Flexbox in 20 minutes
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+### AI Collaboration
 
-**Have fun building!** 🚀
+I worked Claude (Anthropic) as a coding coach and guide throughout this project.
+
+Sometimes when I doubted my steps I would ask if the steps I was planning to take were right e.g. when I started the project setup via command line. 
+
+Claude's role was to not give me the answers but to ask me questions that would point me in the right direction when stuck.
+
+I have asked less questions this time around. But with the media queries Claude definitely helped me look in the right places.
+
+Although sometimes Claude mighht want you to do things Claude's way. It is helpful iff you familiarise yourself with reading the documentation ddirectoriees like [W3schools](https://w3schools.com) and [MDN](https://developer.mozilla.org/). 
+
+As you are the one working on the project you know what and how you want to go about it. It might take a bit longer to figure out in the beginning but it is worth it to feel confident doing so. This helps you greatly in knowing what questions to ask to get the answers you need.
+
+
+## Author
+
+- Frontend Mentor - [@yDrucelle](https://www.frontendmentor.io/profile/Drucelle)
+
