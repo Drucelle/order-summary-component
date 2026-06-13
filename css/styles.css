@@ -149,18 +149,36 @@ footer {
 
 /* Media Queries */
 
-@media (min-width: 450px) {
-    body{
+/* Media query Tablet */
+
+@media (min-width: 430px) {
+    body {
+        padding-top: 40px;
         background-image: url("../images/pattern-background-desktop.svg");
         background-position: top center;
         background-size: 100%;
-        align-items: center;
-        padding-top: 80px;
     }
     .card {
-        max-width:400px;
+        max-width: 400px;
     }
-    .card-flexbox{
+    .hero {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Media query Desktop */
+@media (min-width: 768px) {
+    body {
+        padding-top: 80px;
+        background-image: url("../images/pattern-background-desktop.svg");
+        background-position: top center;
+        background-size: 100%;
+    }
+    .card {
+        max-width: 400px;
+    }
+    .card-flexbox {
         padding-top: 30px;
     }
     .hero {
@@ -170,8 +188,7 @@ footer {
     .info-flexbox {
         padding: 15px 20px;
     }
-    .button{
+    .button {
         padding: 15px;
-
-    } 
+    }
 }
