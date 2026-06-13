@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Order Summary Component](./screenshot.jpg)
+![Order Summary Component](./screenshot.png)
 
 ### Links
 
@@ -136,7 +136,7 @@ In future projects I want to:
 - [W3schools-media-rules](https://www.w3schools.com/cssref/atrule_media.php) CSS `@media` rules
 - [MDN](https://developer.mozilla.org/) - For coding best practices and documentation.
 - [markdown-guide](https://www.markdownguide.org/) To learn about Markdown for e.g. Write your README.md file
--[Markdown-tutorial](https://www.markdownguide.org/getting-started/)A tutorial in writing with Markdown 
+- [Markdown-tutorial](https://www.markdownguide.org/getting-started/)A tutorial in writing with Markdown 
 - [Coding2Go](https://www.youtube.com/watch?v=wsTv9y931o8) YT Chanel Learn Flexbox in 20 minutes
 
 
@@ -150,9 +150,9 @@ Claude's role was to not give me the answers but to ask me questions that would 
 
 I have asked less questions this time around. But with the media queries Claude definitely helped me look in the right places.
 
-Although sometimes Claude mighht want you to do things Claude's way. It is helpful iff you familiarise yourself with reading the documentation ddirectoriees like [W3schools](https://w3schools.com) and [MDN](https://developer.mozilla.org/). 
+Although sometimes Claude might want you to do things Claude's way. It is helpful if you familiarise yourself with reading the documentation ddirectories like [W3schools](https://w3schools.com) and [MDN](https://developer.mozilla.org/). 
 
-As you are the one working on the project you know what and how you want to go about it. It might take a bit longer to figure out in the beginning but it is worth it to feel confident doing so. This helps you greatly in knowing what questions to ask to get the answers you need.
+As you are the one working on the project you know what and how you want to go about it. It might take a bit longer to figure out in the beginning but it is worth it to feel confident doing so. This helps you greatly in knowing exactly what questions to ask Claude or any AI Agent to get the answers you need.
 
 
 ## Author
