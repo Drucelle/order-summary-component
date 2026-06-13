@@ -18,7 +18,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 
 
-
 ## Overview
 
 ### The challenge
@@ -120,6 +119,11 @@ If terminal gets stuck for whaatever reason (zsh):
 - `Cmd + Shift + R` Hard refresh in Chrome
 - `Cmd + Z` Undo in VS Code
 
+**WCAG Accesibility Requirements**
+
+I noticed the grey text colours specified in the style guide don't fully meet WCAG AA contrast requirements. I initially thought I should flag this to the designer, but the style guide itself stated to meet WCAG requirements, so fixing it was actually part of the task. 
+
+Running a Lighthouse audit (in DevTools) helped me identify and fix both this and a heading order issue, achieving a **100% accessibility score**.
 
 ### Continued development
 
@@ -130,6 +134,7 @@ In future projects I want to:
 - Get beter at writing media queries and understand responsive design best pratices
 - Improve my ability to match design pixel pefectly
 - Build more confidence writing CSS
+- Get more aquainted and informed on WCAG requirements 
 
 
 ### Useful resources
@@ -165,4 +170,5 @@ As you are the one working on the project you know what and how you want to go a
 
 
 Thank you, for reading my whole README.md 
+I know I put a lot of information here I just wanted to document and share my learnings. Might help someone?
 Any suggestions in better ways to write my code are very welcome.

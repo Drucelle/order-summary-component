@@ -11,7 +11,7 @@
   --color-primary-dark-blue-700: hsl(245, 75%, 52%);
   /* Neutral */
   --color-neutral-blue-50: hsl(225, 100%, 98%);
-  --color-neutral-gray-600: hsl(224, 23%, 55%);
+  --color-neutral-gray-600:hsl(224, 23%, 40%);
   --color-neutral-blue-950: hsl(223, 47%, 23%);
   /* Font Size */
   --font-size-p: 16px;
@@ -105,11 +105,11 @@ body {
     color: var(--color-neutral-gray-600);
     flex: 1;
 }
-.annual-plan-flexbox h4 {
+.annual-plan-title {
     font-weight: 900;
     color: var(--color-neutral-blue-950);
 }
-.annual-plan-flexbox p {
+.annual-plan-flexbox .price {
     font-weight: 500;
 }
 .button{
