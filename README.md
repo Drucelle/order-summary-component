@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/Drucelle/order-summary-component/)
-- Live Site URL: [Live Demo](https://drucelle.github.io/order-summry-component/)
+- Live Site URL: [Live Demo](https://drucelle.github.io/order-summary-component/)
 
 ## My process
 
