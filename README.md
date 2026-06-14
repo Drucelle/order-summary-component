@@ -122,7 +122,30 @@ If terminal gets stuck for whaatever reason (zsh):
 
 I noticed the grey text colours specified in the style guide don't fully meet WCAG AA contrast requirements. I initially thought I should flag this to the designer, but the style guide itself stated to meet WCAG requirements, so fixing it was actually part of the task. 
 
-Running a Lighthouse audit (in DevTools) helped me identify and fix both this and a heading order issue, achieving a **100% accessibility score**.
+Running a Lighthouse audit (in DevTools) helped me identify and fix both this and a heading order issue, achieving a lighthouse  **100% accessibility score**.
+
+**After Frrontend Mentor AI Code Feedback**
+I have added this section after receiving a **brutal Frontend Mentor AI Code Feedback** Humbled me right away. Thanks to it though I have learned so much more. Especially what not to do for next projects and what to work on.
+
+**CSS Units and Accessibility :eyes:**
+I learned to use `rem` units instead of `px` throughout my CSS, including in media queries. This ensures styles respect the user's browser font size preferences, improving accessibility.
+
+**CSS clamp() for Responsive Design :eyes:**
+I used `clamp()` to create responsive font sizes and card width without needing extra media queries:
+
+```css
+width: clamp(17rem, 90%, 25rem);
+font-size: clamp(1.25rem, 3vw, 1.375rem);
+```
+This sets a minimum, preferred and maximum value all in one line.
+
+**Code Quality**
+I learned to pay extra attention to avoid duplicate CSS properties, order selectors from least to most 
+specific, and use CSS custom properties consistently throughout the stylesheet.
+
+
+**:eyes:Remember to check out the [Useful resources](#useful-resources)section:eyes:**
+
 
 ### Continued development
 
@@ -135,17 +158,44 @@ In future projects I want to:
 - Build more confidence writing CSS
 - Get more aquainted and informed on WCAG requirements 
 
+Add these after my humbling Frontenn Menttor AI Code Review.
+
+I have added these as the review flagged these changes that needed to be made e.g. every px had to be changed to rem for responsiveness as well.
+- Learn and implement CSS logical properties (e.g. `margin-inline-end` instead of 
+`margin-left`) to better support different reading directions and internationalisation
+- Explore CSS functions like `calc()` and `min()` further. I used `clamp()` in this project for responsive font sizes and card width, and want to deepen my understanding of when and how to use these functions effectively
+
 
 ### Useful resources
 
-- [W3schools](https://w3schools.com) - For coding tutorials, best practices and documentation.
-- [W3shools-Animated-Buttons](https://www.w3schools.com/howto/howto_css_animate_buttons.asp) Documentation on animated buttons
-- [W3schools-Shadow-Box](https://www.w3schools.com/css/css3_shadows_box.asp) CSS Boxshadow
-- [W3schools-media-rules](https://www.w3schools.com/cssref/atrule_media.php) CSS `@media` rules
-- [MDN](https://developer.mozilla.org/) For coding best practices and documentation.
-- [markdown-guide](https://www.markdownguide.org/) To learn about Markdown for e.g. Write your README.md file
-- [Markdown-tutorial](https://www.markdownguide.org/getting-started/) A tutorial in writing with Markdown 
-- [Coding2Go](https://www.youtube.com/watch?v=wsTv9y931o8) YouTube Chanel.Learn Flexbox in 20 minutes
+- [W3Schools](https://w3schools.com): 
+  For coding tutorials, best practices and documentation.
+- [W3shools-Animated-Buttons](https://www.w3schools.com/howto/howto_css_animate_buttons.asp): 
+  Documentation on animated buttons
+- [W3schools Shadow Box](https://www.w3schools.com/css/css3_shadows_box.asp): 
+  CSS Boxshadow
+- [W3Schools Media Rules](https://www.w3schools.com/cssref/atrule_media.php): 
+  CSS `@media` Rules
+- [MDN](https://developer.mozilla.org/): 
+  For coding best practices and documentation.
+- [Markdown Guide](https://www.markdownguide.org/): 
+  To learn about Markdown for e.g. Write your README.md file
+- [Markdown Tutorial](https://www.markdownguide.org/getting-started/): 
+  A tutorial in writing with Markdown 
+- [Coding2Go](https://www.youtube.com/watch?v=wsTv9y931o8) 
+  YouTube Chanel.Learn Flexbox in 20 minutes
+- [MDN Web Docs CSS clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp): 
+  The definitive reference for CSS functions including clamp(), min() and max()
+- [MDN Web Docs - CSS Logical Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values): 
+  Guide to logical properties for internationalisation support
+- [MDN Web Docs - rem units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units): 
+  Explains CSS units including rem, em, px and when to use each
+- [CSS Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/):
+  The most useful Flexbox reference I found during this project
+- [Web.dev - Accessibility](https://web.dev/accessibility/):
+  Google's guide to web accessibility best practices
+- [gitignore.io](https://www.gitignore.io):
+  Generates the perfect .gitignore file for your project
 
 
 ### AI Collaboration
@@ -169,5 +219,5 @@ As you are the one working on the project you know what and how you want to go a
 
 
 Thank you, for reading my whole README.md 
-I know I put a lot of information here I just wanted to document and share my learnings. Might help someone?
+I know I put a lot of information here I just wanted to document and share my learnings and useful resources I know I will come back to look at. Might help someone?
 Any suggestions in better ways to write my code are very welcome.
