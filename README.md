@@ -71,6 +71,7 @@ margin-left: autto; /* pushing elements to the right */
 flex: 1; /* making elements grow to fill available space */
 ```
 
+
 **CSS Default Reset**
 
 I learned and understand now why I always need to start CSS with a default reset rule set, including :eyes: :
@@ -99,7 +100,7 @@ After the reset rule always set up a `:root` block with all my colors, fonts etc
 
 **Media Queries**
 
-Apart from starting with the mobile first approach I leaned to use separate media queries for taablet and desktop breakpoints, switching images and adjusting card sizing:
+Apart from starting with the mobile first approach I leaned to use separate media queries for tablet and desktop breakpoints, switching images and adjusting card sizing:
 
 ```css
 @media (min-width: 430px){/* tablet */}
@@ -110,9 +111,9 @@ Apart from starting with the mobile first approach I leaned to use separate medi
 
 I managed the entire project from the terminal, creating folders, moving files, initialising Git, and pushing to Github. I made small, meaning ful commits throughout the project.
 
-If terminal gets stuck for whaatever reason (zsh):
+If terminal gets stuck for whatever reason (zsh):
 
-- `Control + C` This stops whatever is currently running and gives you back your prompt back! :smile:
+- `Control + C` This stops whatever is currently running and gives you back your prompt back!
 
 **Keyboard shortcuts for Mac learned:**
 - `Shift + Option + F` Format document with Prettier
@@ -146,7 +147,7 @@ I learned to pay extra attention to avoid duplicate CSS properties, order select
 specific, and use CSS custom properties consistently throughout the stylesheet.
 
 
-**Remember to check out :eyes: the [Useful resources](#useful-resources)section**
+**Remember to check out :eyes: the [Useful resources](#useful-resources) section**
 
 
 ### Continued development
@@ -160,9 +161,12 @@ In future projects I want to:
 - Build more confidence writing CSS
 - Get more aquainted and informed on WCAG requirements 
 
-I have added these after my humbling Frontend Mentor AI Code Review.
 
-I have added these as the review flagged these changes that needed to be made e.g. every px had to be changed to rem for responsiveness as well.
+**I have added these after my humbling Frontend Mentor AI Code Review.**
+
+The Frontend Mentor AI Code review flagged these changes that needed to be made e.g. every px had to be changed to rem for responsiveness.
+
+So, I had to add these to continued development:
 - Learn and implement CSS logical properties (e.g. `margin-inline-end` instead of 
 `margin-left`) to better support different reading directions and internationalisation
 - Explore CSS functions like `calc()` and `min()` further. I used `clamp()` in this project for responsive font sizes and card width, and want to deepen my understanding of when and how to use these functions effectively
@@ -217,7 +221,9 @@ As you are the one working on the project you know what and how you want to go a
 
 ## Author
 
-- Frontend Mentor - [@yDrucelle](https://www.frontendmentor.io/profile/Drucelle)
+- Frontend Mentor: [@Drucelle](https://www.frontendmentor.io/profile/Drucelle)
+- GitHub: [@Drucelle](https://github.com/Drucelle) 
+- My Dev Playbook: [My Dev Playbook](https://github.com/Drucelle/dev-playbook)
 
 ## Closing Messsage
 
