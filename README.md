@@ -15,6 +15,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
+- [Closing Message](#closing-message)
 
 
 
@@ -53,7 +54,7 @@ Users should be able to:
 This project taught me a lot about responsive design and the mobile first approach.
 
 **Mobile-first workflow**
-I learned to always open the DevTools device toolbar when starting a project ansd set it to 320px. Starting from the smallest screen size. Then build it upward from there using 'min-width' '@media' queries.
+I learned to always open the DevTools device toolbar when starting a project ansd set it to 375px. Thhat'ss what we built for. Then build it upward from there using 'min-width' '@media' queries. Meanwhile continiousely check if anything breaks 320px onwards, making sure it still works at the smaller screens.
 
 **DevTools**
 I noticed during this project that I got more comfortable using Chrome DevTools to inspect elements, debug CSS issues, and test across different screen sizes. I also learned to dock DevTools to the bottom of the screen to maximise. the vviewport width when testing.
@@ -67,7 +68,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-left: autto; /* pushing elements to the right */
-flex: 1; /* makingg elements grow to fill available space */
+flex: 1; /* making elements grow to fill available space */
 ```
 
 **CSS Default Reset**
@@ -91,7 +92,7 @@ After the reset rule always set up a `:root` block with all my colors, fonts etc
 ```css
 :root {
   --color-primaary-darkblue-700: hsl(245, 75%, 52%);
-  --color-neutraal-grey-600: hsl(224, 23%, 55%);
+  --color-neutral-grey-600: hsl(224, 23%, 55%);
   --font-family: "Red Hat Display", sans-serif;
 }
 ```
@@ -124,13 +125,14 @@ I noticed the grey text colours specified in the style guide don't fully meet WC
 
 Running a Lighthouse audit (in DevTools) helped me identify and fix both this and a heading order issue, achieving a lighthouse  **100% accessibility score**.
 
-**After Frrontend Mentor AI Code Feedback**
-I have added this section after receiving a **brutal Frontend Mentor AI Code Feedback** Humbled me right away. Thanks to it though I have learned so much more. Especially what not to do for next projects and what to work on.
 
-**CSS Units and Accessibility :eyes:**
+**After receiving my Frontend Mentor AI Code Feedback**
+I have added this section after receiving a **brutal Frontend Mentor AI Code Feedback** It humbled me right away. Thanks to it though I have learned so much more. Especially what not to do for next projects and what to work on.
+
+**CSS Units and Accessibility**
 I learned to use `rem` units instead of `px` throughout my CSS, including in media queries. This ensures styles respect the user's browser font size preferences, improving accessibility.
 
-**CSS clamp() for Responsive Design :eyes:**
+**CSS clamp() for Responsive Design**
 I used `clamp()` to create responsive font sizes and card width without needing extra media queries:
 
 ```css
@@ -144,7 +146,7 @@ I learned to pay extra attention to avoid duplicate CSS properties, order select
 specific, and use CSS custom properties consistently throughout the stylesheet.
 
 
-**:eyes:Remember to check out the [Useful resources](#useful-resources)section:eyes:**
+**Remember to check out :eyes: the [Useful resources](#useful-resources)section**
 
 
 ### Continued development
@@ -158,7 +160,7 @@ In future projects I want to:
 - Build more confidence writing CSS
 - Get more aquainted and informed on WCAG requirements 
 
-Add these after my humbling Frontenn Menttor AI Code Review.
+I have added these after my humbling Frontend Mentor AI Code Review.
 
 I have added these as the review flagged these changes that needed to be made e.g. every px had to be changed to rem for responsiveness as well.
 - Learn and implement CSS logical properties (e.g. `margin-inline-end` instead of 
@@ -217,7 +219,9 @@ As you are the one working on the project you know what and how you want to go a
 
 - Frontend Mentor - [@yDrucelle](https://www.frontendmentor.io/profile/Drucelle)
 
+## Closing Messsage
 
 Thank you, for reading my whole README.md 
-I know I put a lot of information here I just wanted to document and share my learnings and useful resources I know I will come back to look at. Might help someone?
+I know I put a lot of information here I just wanted to document and share my learnings and useful resources. I will definitely have to come back to take a look at them. Hopefully it might help someone else too?
+
 Any suggestions in better ways to write my code are very welcome.
